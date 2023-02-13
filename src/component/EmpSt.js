@@ -10,7 +10,7 @@ function StatusStatus() {
   return (
     <div>
       <label htmlFor="status">Status:</label>
-      <select id="status" value={status} onChange={handleChange}>
+      <select id="status" value={status} onChange={handleChange} style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-90px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}>
         <option value="Employed-Full-Time">Employed-Full-Time</option>
         <option value="Self-Employed">Self-Employed</option>
         <option value="On Benefits">On Benefits</option>

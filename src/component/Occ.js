@@ -10,7 +10,7 @@ function Occupation() {
   return (
     <div>
       <label htmlFor="occupation">Occupation:</label>
-      <select id="occupation" value={occupation} onChange={handleChange}>
+      <select id="occupation" value={occupation} onChange={handleChange} style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-60px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}>
         <option value="Managerial">Managerial</option>
         <option value="Professional">Professional</option>
         <option value="Semi-Professional">Semi-Professional</option>

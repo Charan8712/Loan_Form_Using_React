@@ -10,8 +10,8 @@ function PayFrequency() {
   return (
     <div>
       <label htmlFor="payFrequency">Pay Frequency:</label>
-      <select
-        id="payFrequency"
+      <select style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-30px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
+        id="payFrequency" 
         value={payFrequency}
         onChange={handleChange}
       >

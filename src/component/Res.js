@@ -27,9 +27,9 @@ const ResidentialStatus = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label >
         Residential Status:
-        <select value={selectedOption} onChange={handleChange}>
+        <select value={selectedOption} onChange={handleChange} style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-10px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}>
           <option value="">Select an option</option>
           {options.map(option => (
             <option key={option} value={option}>
@@ -39,7 +39,7 @@ const ResidentialStatus = () => {
         </select>
       </label>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      <button type="submit">Submit</button>
+      <button type="submit" style={{fontSize: "15px", width: "70px",height:"30px",borderRadius: "50px" , margin: "10px", marginRight: "-80px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}>Submit</button>
     </form>
   );
 };

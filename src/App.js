@@ -25,15 +25,17 @@ import ShortCode from "./component/ShortCode";
 import UpdateBtn from "./component/UpdateBtn";
 
 
-
 function App() {
   return (
     <>
+    <div style={{backgroundImage:`url("https://c4.wallpaperflare.com/wallpaper/951/260/911/design-wallpaper-preview.jpg")`,backgroundSize:"cover", backgroundRepeat:"no-repeat", width: "100%", position: "absolute", top:"0", left:"0", textAlign:"center",fontWeight:"bold" , borderRadius:"50px", margin:"Auto"}}>
     {/* <LoanAmount />
     <LoanTenure />
     <LoanPurpose />  */}
-    <h1>Loan Details</h1>
-    <Next1 />
+    
+    <h1 style={{textAlign: "center"}}>Loan Details</h1>
+    <div style={{textAlign: "center"}}> <Next1 /></div>
+
     <h1>Personal Details</h1>
     {/* <NameForm />
     <Gender />
@@ -58,6 +60,7 @@ function App() {
     <Bank />
     <ShortCode/>
     <UpdateBtn />
+    </div>
     </>
   );
 }

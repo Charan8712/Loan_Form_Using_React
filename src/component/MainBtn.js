@@ -19,8 +19,10 @@ const MainComponent = () => {
     case 1:
       return (
         <>
+        
           <NameForm />
-          <NextButton handleNextStep={handleNextStep} />
+          <NextButton handleNextStep ={handleNextStep} />
+          
         </>
       );
     case 2:
@@ -66,7 +68,7 @@ const MainComponent = () => {
         </>
       );
     default:
-      return <div>Form has been successfully submitted!</div>;
+      return <div style={{color:"green"}}>Form has been successfully submitted!</div>;
   }
 };
 

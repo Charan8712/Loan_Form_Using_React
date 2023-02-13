@@ -21,15 +21,16 @@ const EmailAddress = () => {
   };
 
   return (
-    <> Email Address*
+    <> <div style={{fontWeight:"bold", marginLeft: "-10px" ,textAlign:"center", marginLeft:"50px",padding:"0px", marginTop:"30px", marginBottom:"30px" }}>Email Address *</div>
     <form onSubmit={handleSubmit}>
-      <input
+      <input  style={{borderRadius:"50px",width: "200px", height:"20px", marginLeft:"20px", textAlign:"center",marginBottom: "10px"}}
         type="email"
         value={email}
+        placeholder= "Enter Email Address"
         onChange={(e) => setEmail(e.target.value)}
       />
-      {error && <div>{error}</div>}
-      <button type="submit">Submit</button>
+      {error && <div style={{color:"red"}}>{error}</div>}
+      <button type="submit" style={{borderRadius:"50px",width: "90px",fontWeight:"bold", height:"20px", marginLeft:"00px", textAlign:"center",marginBottom: "10px"}}>Submit</button>
     </form>
     </>
   );

@@ -12,9 +12,9 @@ const App = () => {
   };
 
   return (
-    <div>
-      <button onClick={handleUpdate}>Update</button>
-      <button onClick={handleCancel}>Cancel</button>
+    <div >
+      <button onClick={handleUpdate} style={{fontSize: "15px", width: "100px",height:"30px",borderRadius: "50px" , margin: "10px", marginRight: "20px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}>Update</button>
+      <button onClick={handleCancel} style={{fontSize: "15px", width: "100px",height:"30px",borderRadius: "50px" , margin: "10px", marginRight: "-120px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}>Cancel</button>
       <p>{message}</p>
     </div>
   );

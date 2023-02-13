@@ -17,11 +17,11 @@ const GenderForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="gender">
+      <label htmlFor="gender" style={{fontWeight:"bold", marginLeft: "-10px" ,textAlign:"center", marginLeft:"50px",padding:"0px" }} >
         Gender *
         <br />
-        <input
-          type="radio"
+        <input style={{textAlign:"center", marginLeft:"25px"}}
+          type ="radio"
           id="male"
           name="gender"
           value="Male"
@@ -30,7 +30,7 @@ const GenderForm = () => {
         />
         Male
         <br />
-        <input
+        <input   style={{textAlign:"center", marginLeft:"40px"}}
           type="radio"
           id="female"
           name="gender"
@@ -40,7 +40,7 @@ const GenderForm = () => {
         />
         Female
         <br />
-        <input
+        <input  style={{textAlign:"center", marginLeft:"30px"}}
           type="radio"
           id="other"
           name="gender"
@@ -53,7 +53,7 @@ const GenderForm = () => {
       <br />
       <div style={{ color: 'red' }}>{errorMessage}</div>
       <br />
-      <button type="submit">Submit</button>
+      <button type="submit"style={{fontSize: "15px", width: "70px",height:"35px",borderRadius: "50px" , margin: "10px", marginLeft: "90px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}} style={{fontSize: "15px", width: "70px",height:"35px",borderRadius: "50px" , margin: "10px", marginLeft: "90px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}>Submit</button>
     </form>
   );
 };

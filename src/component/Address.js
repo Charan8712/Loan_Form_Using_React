@@ -45,58 +45,65 @@ const Address = () => {
     <div>
       <label>
         House Number:
-        <input
+        <input  style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-30px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
           type="text"
           value={houseNumber}
           onChange={handleHouseNumberChange}
           onBlur={handleBlur}
+          placeholder="Enter House Number"
         />
       </label>
       <br />
       <label>
         Flat Number:
-        <input
+        <input  style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-50px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
           type="text"
           value={flatNumber}
           onChange={handleFlatNumberChange}
           onBlur={handleBlur}
+          placeholder="Enter Flat Number"
         />
       </label>
       <br />
       <label>
         House Name:
-        <input
+        <input  style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-40px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
           type="text"
           value={houseName}
           onChange={handleHouseNameChange}
           onBlur={handleBlur}
+          placeholder="Enter House Name"
         />
       </label>
       <br />
       <label>
         Street:
-        <input
+        <input  style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-80px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
           type="text"
           value={street}
+          placeholder="Enter Street Address"
           onChange={handleStreetChange}
+       
         />
       </label>
       <br />
       <label>
         Town/City:
-        <input
+        <input  style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-50px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
           type="text"
           value={townCity}
           onChange={handleTownCityChange}
+          placeholder="Enter Your City"
         />
       </label>
       <br />
       <label>
         County/District:
-        <input
+        <input  style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "-30px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
           type="text"
           value={countyDistrict}
           onChange={handleCountyDistrictChange}
+          placeholder="Enter Country"
         />
       </label>
       {error && <p style={{ color: "red" }}>{error}</p>}

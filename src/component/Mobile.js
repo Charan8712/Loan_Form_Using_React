@@ -23,13 +23,13 @@ const MobileNumber = () => {
   return (
     <>Mobile Number *
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
+      <input style={{fontSize: "15px", width: "210px",height:"25px",borderRadius: "50px" , margin: "10px", marginRight: "-50px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
         value={mobile}
+        placeholder="Enter Mobile Number"
         onChange={(e) => setMobile(e.target.value)}
       />
-      {error && <div>{error}</div>}
-      <button type="submit">Submit</button>
+      {error && <div style={{color:"red"}}>{error}</div>}
+      <button type="submit"style={{fontSize: "15px", width: "70px",height:"35px",borderRadius: "50px" , margin: "10px", marginLeft: "50px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}>Submit</button>
     </form>
     </>
   );

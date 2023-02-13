@@ -17,11 +17,12 @@ function BankAccountNumber() {
   return (
     <div>
       <label htmlFor="bankAccountNumber">Bank Account Number:</label>
-      <input
+      <input style={{fontSize: "15px", width: "220px",height:"20px",borderRadius: "50px" , margin: "10px", marginRight: "20px", textAlign: "center" , borderBlockStyle: "solidblack", position:"relative"}}
         type="text"
         id="bankAccountNumber"
         value={bankAccountNumber}
         onChange={handleChange}
+        placeholder="Enter Bank Account Num"
       />
       {errorMessage && <div style={{ color: "red" }}>{errorMessage}</div>}
     </div>
